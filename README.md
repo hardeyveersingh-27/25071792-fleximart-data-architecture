@@ -1,130 +1,87 @@
-\# FlexiMart Data Architecture Project
+# FlexiMart Data Architecture Project
 
-
-
-Student Name: Hardeyveer Singh
-
-Student ID: 25071792
-
-Course: Data for Artificial Intelligence
-
-Assignment: AI Data Architecture Design and Implementation
-
-
+**Student Name:** Hardeyveer Singh  
+**Student ID:** 25071792  
+**Email:** your_university_email@example.com  
+**Course:** Data for Artificial Intelligence  
+**Assignment:** AI Data Architecture Design and Implementation  
+**Date:** September 2026  
 
 ---
 
+## Project Overview
 
-
-\## Project Overview
-
-
-
-This project implements a complete data architecture solution for FlexiMart, an e-commerce platform. It covers data ingestion, data quality handling, relational database design, NoSQL analysis, and data warehouse analytics.
-
-
+This project implements a complete end-to-end data architecture solution for FlexiMart, an e-commerce platform. It includes an ETL pipeline to clean and load raw CSV data into a relational database, NoSQL analysis using MongoDB for flexible product data, and a data warehouse built using a star schema to support analytical reporting.
 
 ---
 
+## Repository Structure
 
-
-\## Repository Structure
-
-
-
+---
 fleximart-data-architecture/
-
+├── README.md
+│
 ├── part1-database-etl/
-
-│   ├── README.md
-
-│   ├── schema.sql
-
-│   ├── business\_queries.sql
-
-│   ├── schema\_documentation.md
-
-│   └── data\_quality\_report.txt
-
-&nbsp;    └── Screenshots.doc
-
+│ ├── README.md
+│ ├── etl_pipeline.py
+│ ├── fleximart_schema.sql
+│ ├── fleximart_business_queries.sql
+│ ├── schema_documentation.md
+│ └── data_quality_report.txt
 │
-
 ├── part2-nosql/
-
-│   ├── nosql\_analysis.md
-
-│   ├── mongodb\_operations.js
-
-│   └── products\_catalog.json
-
+│ ├── README.md
+│ ├── nosql_analysis.md
+│ ├── mongodb_operations.js
+│ └── products_catalog.json
 │
+└── part3-datawarehouse/
+├── README.md
+├── star_schema_design.md
+├── warehouse_schema.sql
+├── warehouse_data.sql
+└── analytics_queries.sql
+---
 
-├── part3-datawarehouse/
-
-│   ├── star\_schema\_design.md
-
-│   ├── warehouse\_schema.sql
-
-│   ├── warehouse\_data.sql
-
-│   └── analytics\_queries.sql
-
-│
-
-└── README.md
 
 
 
 ---
 
+## Technologies Used
 
-
-\## Technologies Used
-
-
-
-\- MySQL 8.0
-
-\- MySQL Workbench
-
-\- MongoDB
-
-\- SQL
-
-\- Markdown Documentation
-
-
+- Python 3.x  
+- pandas  
+- mysql-connector-python  
+- MySQL 8.0  
+- MySQL Workbench  
+- MongoDB  
+- SQL  
+- Markdown  
 
 ---
 
+## Setup Instructions
+
+### Relational Database Setup (MySQL)
+
+```bash
+# Create databases
+mysql -u root -p -e "CREATE DATABASE fleximart;"
+mysql -u root -p -e "CREATE DATABASE fleximart_dw;"
+
+# Run ETL Pipeline
+python part1-database-etl/etl_pipeline.py
+
+# Run Business Queries
+mysql -u root -p fleximart < part1-database-etl/fleximart_business_queries.sql
+
+mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql
+mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql
+mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql
+mongosh < part2-nosql/mongodb_operations.js
 
 
-\## Key Features Implemented
-
-
-
-\- ETL pipeline with data cleaning and normalization
-
-\- Relational database with primary and foreign keys
-
-\- Business analytics using SQL (aggregations, HAVING, window functions)
-
-\- NoSQL analysis using MongoDB document model
-
-\- Data warehouse star schema with OLAP queries
-
-
-
----
-
-
-
-\## Outcome
-
-
-
-The project successfully demonstrates end-to-end data architecture design, from raw data ingestion to advanced analytical reporting, following industry best practices.
 
 
 
