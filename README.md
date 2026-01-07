@@ -13,6 +13,8 @@ This project implements a complete end-to-end data architecture solution for Fle
 
 ---
 ## Repository Structure
+
+
 25071792-fleximart-data-architecture/
 │
 ├── README.md
@@ -72,6 +74,7 @@ mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql
 mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql
 mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql
 mongosh < part2-nosql/mongodb_operations.js
+
 
 
 
