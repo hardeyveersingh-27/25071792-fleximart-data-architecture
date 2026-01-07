@@ -5,7 +5,7 @@
  **Course:** Data for Artificial Intelligence  
 **Assignment:** AI Data Architecture Design and Implementation  
 
---## Project Overview
+## Project Overview
 I have built a complete data solution for FlexiMart retail. The project includes building an ETL pipeline using Python and MySQL (Part 1), analyzing complex product data using MongoDB (Part 2), and creating a Star Schema Data Warehouse for analytics (Part 3).
 
 ## Repository Structure
@@ -44,6 +44,7 @@ I have built a complete data solution for FlexiMart retail. The project includes
 ## Challenges Faced
 1. **Data Cleaning:** Standardizing phone numbers in Part 1 was tricky because of different formats. I solved it using Python Regex.
 2. **Schema Design:** Deciding between Fact and Dimension tables in Part 3 was confusing initially, but the Star Schema approach clarified relationships.
+
 
 
 
