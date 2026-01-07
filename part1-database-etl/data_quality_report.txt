@@ -1,0 +1,36 @@
+FlexiMart Data Quality Report
+=============================
+
+ETL Pipeline Execution Summary
+
+1. Customers Data (customers_raw.csv)
+------------------------------------
+Total records processed: 25
+Duplicate records removed: 1
+Missing email addresses handled: 5
+Phone numbers standardized to international format (+91-XXXXXXXXXX)
+Date formats standardized to YYYY-MM-DD
+Final records loaded into customers table: 24
+
+2. Products Data (products_raw.csv)
+-----------------------------------
+Total records processed: 20
+Missing prices handled: 3 (records dropped)
+Missing stock quantities handled: 1 (defaulted to 0)
+Category names standardized (Electronics, Fashion, Groceries)
+Extra spaces removed from product names
+Final records loaded into products table: 17
+
+3. Sales Data (sales_raw.csv)
+-----------------------------
+Total records processed: 40
+Duplicate transactions removed: 1
+Missing customer IDs handled: 3 (records dropped)
+Missing product IDs handled: 2 (records dropped)
+Date formats standardized to YYYY-MM-DD
+Final records loaded into orders and order_items tables: 34
+
+ETL Status
+----------
+ETL pipeline completed successfully.
+All cleaned data was validated and loaded into the MySQL database without errors.
