@@ -2,10 +2,8 @@
 
 **Student Name:** Hardeyveer Singh  
 **Student ID:** 25071792  
-**Email:** your_university_email@example.com  
-**Course:** Data for Artificial Intelligence  
+ **Course:** Data for Artificial Intelligence  
 **Assignment:** AI Data Architecture Design and Implementation  
-**Date:** September 2026  
 
 ---
 
@@ -80,6 +78,7 @@ mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_schema.sql
 mysql -u root -p fleximart_dw < part3-datawarehouse/warehouse_data.sql
 mysql -u root -p fleximart_dw < part3-datawarehouse/analytics_queries.sql
 mongosh < part2-nosql/mongodb_operations.js
+
 
 
 
