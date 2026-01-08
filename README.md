@@ -12,29 +12,35 @@ Assignment: AI Data Architecture Design and Implementation
 This project implements a complete data architecture solution for FlexiMart, an e-commerce platform. It covers data ingestion, data quality handling, relational database design, NoSQL analysis, and data warehouse analytics.
 
 ---
-
 ## Repository Structure
 
-fleximart-data-architecture/
+```text
+25071792-fleximart-data-architecture/
+├── README.md
 ├── part1-database-etl/
 │   ├── README.md
-│   ├── schema.sql
-│   ├── Flexiware_business_queries.sql
-│   ├── Flexiware_schema_documentation.md
+│   ├── etl_pipeline.py
+│   ├── fleximart_schema.sql
+│   ├── fleximart_business_queries.sql
+│   ├── schema_documentation.md
 │   └── data_quality_report.txt
 │
 ├── part2-nosql/
+│   ├── README.md
 │   ├── nosql_analysis.md
 │   ├── mongodb_operations.js
 │   └── products_catalog.json
 │
-├── part3-datawarehouse/
-│   ├── star_schema_design.md
-│   ├── warehouse_schema.sql
-│   ├── warehouse_data.sql
-│   └── analytics_queries.sql
-│
-└── README.md
+└── part3-datawarehouse/
+    ├── README.md
+    ├── star_schema_design.md
+    ├── warehouse_schema.sql
+    ├── warehouse_data.sql
+    └── analytics_queries.sql
+
+
+
+
 
 ---
 
@@ -73,3 +79,4 @@ fleximart-data-architecture/
 ## Outcome
 
 The project successfully demonstrates end-to-end data architecture design, from raw data ingestion to advanced analytical reporting, following industry best practices.
+
